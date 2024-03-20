@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from display_value="">f8019965474d061051711288c26d43c9</copied_from>
+        <description>Run Server Side Validation Script</description>
+        <display_name>Run Server Side Script</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>1</order>
+        <step_config display_value="Run Server Side Script">41de4a935332120028bc29cac2dc349a</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-19 19:15:20</sys_created_on>
+        <sys_id>5501d965474d061051711288c26d4325</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Run Server Side Script</sys_name>
+        <sys_package display_value="sn_bpe" source="x_13131_bpe">46be477b4774021051711288c26d432c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="sn_bpe">46be477b4774021051711288c26d432c</sys_scope>
+        <sys_update_name>sys_atf_step_5501d965474d061051711288c26d4325</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-19 19:19:38</sys_updated_on>
+        <table/>
+        <test display_value="cl100k_base - Hamlet">c101d565474d061051711288c26d4396</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=5501d965474d061051711288c26d4325"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>5501d965474d061051711288c26d4325</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-19 19:15:20</sys_created_on>
+        <sys_id>1101d965474d061051711288c26d4326</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-19 19:19:38</sys_updated_on>
+        <value>(function(outputs, steps, params, stepResult, assertEqual) {&#13;
+&#13;
+const TEXT_TO_TEST = `To be, or not to be: that is the question:&#13;
+Whether 'tis nobler in the mind to suffer&#13;
+The slings and arrows of outrageous fortune,&#13;
+Or to take arms against a sea of troubles,&#13;
+And by opposing end them? To die: to sleep;&#13;
+No more; and by a sleep to say we end&#13;
+The heart-ache and the thousand natural shocks&#13;
+That flesh is heir to, 'tis a consummation&#13;
+Devoutly to be wish'd. To die, to sleep;&#13;
+To sleep: perchance to dream: ay, there's the rub;&#13;
+For in that sleep of death what dreams may come&#13;
+When we have shuffled off this mortal coil,&#13;
+Must give us pause: there's the respect&#13;
+That makes calamity of so long life;&#13;
+For who would bear the whips and scorns of time,&#13;
+The oppressor's wrong, the proud man's contumely,&#13;
+The pangs of despised love, the law's delay,&#13;
+The insolence of office and the spurns&#13;
+That patient merit of the unworthy takes,&#13;
+When he himself might his quietus make&#13;
+With a bare bodkin? who would fardels bear,&#13;
+To grunt and sweat under a weary life,&#13;
+But that the dread of something after death,&#13;
+The undiscover'd country from whose bourn&#13;
+No traveller returns, puzzles the will&#13;
+And makes us rather bear those ills we have&#13;
+Than fly to others that we know not of?&#13;
+Thus conscience does make cowards of us all;&#13;
+And thus the native hue of resolution&#13;
+Is sicklied o'er with the pale cast of thought,&#13;
+And enterprises of great pith and moment&#13;
+With this regard their currents turn awry,&#13;
+And lose the name of action.—Soft you now!&#13;
+The fair Ophelia! Nymph, in thy orisons&#13;
+Be all my sins remember'd.`;&#13;
+const REFERENCE_ENCODING = [1271, 387, 11, 477, 539, 311, 387, 25, 430, 374, 279, 3488, 512, 25729, 364, 83, 285, 13348, 1565, 304, 279, 4059, 311, 7831, 198, 791, 1776, 826, 323, 38057, 315, 55588, 33415, 345, 2244, 311, 1935, 11977, 2403, 264, 9581, 315, 35665, 345, 3112, 555, 31322, 842, 1124, 30, 2057, 2815, 25, 311, 6212, 280, 2822, 810, 26, 323, 555, 264, 6212, 311, 2019, 584, 842, 198, 791, 4851, 12, 1815, 323, 279, 16579, 5933, 68260, 198, 4897, 26000, 374, 51543, 311, 11, 364, 83, 285, 264, 4766, 76, 367, 198, 14934, 412, 398, 311, 387, 6562, 4265, 13, 2057, 2815, 11, 311, 6212, 280, 1271, 6212, 25, 42983, 685, 311, 8063, 25, 19432, 11, 1070, 596, 279, 10485, 280, 2520, 304, 430, 6212, 315, 4648, 1148, 19226, 1253, 2586, 198, 4599, 584, 617, 75371, 1022, 420, 49972, 40760, 345, 32876, 3041, 603, 18579, 25, 1070, 596, 279, 5201, 198, 4897, 3727, 80933, 488, 315, 779, 1317, 2324, 280, 2520, 889, 1053, 11984, 279, 421, 3153, 323, 1156, 44129, 315, 892, 345, 791, 90838, 269, 596, 5076, 11, 279, 12691, 893, 596, 687, 372, 989, 345, 791, 281, 65587, 315, 40060, 4147, 3021, 11, 279, 2383, 596, 7781, 345, 791, 85943, 768, 315, 5274, 323, 279, 993, 399, 82, 198, 4897, 8893, 38559, 315, 279, 15375, 34594, 5097, 345, 4599, 568, 5678, 2643, 813, 11594, 355, 1304, 198, 2409, 264, 12743, 30111, 8148, 30, 889, 1053, 282, 569, 2053, 11984, 345, 1271, 44143, 323, 28566, 1234, 264, 76656, 2324, 345, 4071, 430, 279, 36075, 315, 2555, 1306, 4648, 345, 791, 82037, 3773, 4265, 3224, 505, 6832, 293, 3514, 198, 2822, 86294, 4780, 11, 47623, 279, 690, 198, 3112, 3727, 603, 4856, 11984, 1884, 220, 3385, 584, 617, 198, 27159, 11722, 311, 3885, 430, 584, 1440, 539, 315, 5380, 45600, 42563, 1587, 1304, 19923, 2402, 315, 603, 682, 280, 3112, 8617, 279, 10068, 40140, 315, 11175, 198, 3957, 14363, 747, 291, 297, 94678, 449, 279, 28639, 6445, 315, 3463, 345, 3112, 40919, 315, 2294, 281, 411, 323, 4545, 198, 2409, 420, 5363, 872, 60701, 2543, 1384, 894, 345, 3112, 9229, 279, 836, 315, 1957, 35192, 31631, 499, 1457, 4999, 791, 6762, 507, 764, 37029, 0, 452, 32800, 11, 304, 26236, 477, 19941, 198, 3513, 682, 856, 40444, 6227, 4265, 13];&#13;
+const { Tokenizer} = require('./src/Tokenizer.js');&#13;
+const tokenizer = new Tokenizer('c14ba3f74738021051711288c26d430c');&#13;
+const output = tokenizer.encode(TEXT_TO_TEST);&#13;
+assertEqual({&#13;
+				name: "Encoding of " + TEXT_TO_TEST + " should match OpenAI Tokenizer:  https://platform.openai.com/tokenizer",&#13;
+				shouldbe: REFERENCE_ENCODING.toString(),&#13;
+				value: output.toString()&#13;
+		}); &#13;
+})(outputs, steps, params, stepResult, assertEqual);&#13;
+&#13;
+</value>
+        <variable display_value="Test script">989d9e235324220002c6435723dc3484</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>5501d965474d061051711288c26d4325</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-19 19:15:20</sys_created_on>
+        <sys_id>5d01d965474d061051711288c26d4325</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-19 19:15:20</sys_updated_on>
+        <value>3.1</value>
+        <variable display_value="Jasmine version">42f2564b73031300440211d8faf6a777</variable>
+    </sys_variable_value>
+</record_update>

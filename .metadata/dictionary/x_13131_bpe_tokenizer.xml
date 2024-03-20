@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="141967374738021051711288c26d4309" label="Tokenizer" max_length="40" name="x_13131_bpe_tokenizer" type="collection">
+        <element label="Name" max_length="100" name="name" type="string"/>
+        <element label="Pattern String" max_length="500" name="pattern_string" type="string"/>
+        <element label="Special Tokens" max_length="1000" name="special_tokens" type="simple_name_values"/>
+    </element>
+</database>

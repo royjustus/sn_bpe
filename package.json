@@ -1,0 +1,30 @@
+{
+    "name": "sn_bpe",
+    "version": "1.0.0",
+    "exports": {
+        ".": "./src/Tokenizer.js"
+    },
+    "description": "A Byte Pair Encoder for ServiceNow",
+    "license": "MIT",
+    "contributors": [],
+    "scripts": {
+        "build": "tsc --build --clean && tsc --build && now-sdk build",
+        "upload": "tsc --build --clean && tsc --build && now-sdk fetch && now-sdk build  && now-sdk deploy",
+        "deploy": "now-sdk deploy"
+    },
+    "now": {
+        "scope": "x_13131_bpe",
+        "scopeId": "46be477b4774021051711288c26d432c",
+        "moduleDir": "src"
+    },
+    "devDependencies": {
+        "@servicenow/eslint-plugin-sdk-app-plugin": "*",
+        "@servicenow/glide": "25.0.1",
+        "@types/node": "^20.11.28",
+        "eslint": "8.50.0",
+        "typescript": "^5.3.3"
+    },
+    "dependencies": {
+        "text-encoder-lite": "^2.0.0"
+    }
+}

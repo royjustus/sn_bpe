@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from display_value="">cd01d565474d061051711288c26d4399</copied_from>
+        <description>Run Server Side Validation Script</description>
+        <display_name>Run Server Side Script</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>1</order>
+        <step_config display_value="Run Server Side Script">41de4a935332120028bc29cac2dc349a</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-19 19:15:21</sys_created_on>
+        <sys_id>6901d965474d061051711288c26d436b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Run Server Side Script</sys_name>
+        <sys_package display_value="sn_bpe" source="x_13131_bpe">46be477b4774021051711288c26d432c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="sn_bpe">46be477b4774021051711288c26d432c</sys_scope>
+        <sys_update_name>sys_atf_step_6901d965474d061051711288c26d436b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-19 19:20:33</sys_updated_on>
+        <table/>
+        <test display_value="cl100k_base - Emoji">a90155e1474d061051711288c26d4312</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=6901d965474d061051711288c26d436b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>6901d965474d061051711288c26d436b</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-19 19:15:21</sys_created_on>
+        <sys_id>6501d965474d061051711288c26d436c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-19 19:20:33</sys_updated_on>
+        <value>(function(outputs, steps, params, stepResult, assertEqual) {&#13;
+&#13;
+const TEXT_TO_TEST = `In case you’ve been sleeping for the past twenty years, emoji usage has been going 📈📈📈. By mid-2015, half of all comments on Instagram included an emoji. Hollywood released a full feature-length film titled The Emoji Movie. Even Google’s CEO Sundar Pichai is posting about urgent fixes to the hamburger emoji.&#13;
+&#13;
+For some, emoji have caused frustration for users (how the heck are you supposed to use the 🙃 emoji?). Yet for many others, emoji has opened up a fascinating new medium of communication. There are even emoji charade-esque “games” where users can guess a movie title based on a series of emoji. (try these: 💉💎 or 👦🏻👓⚡). But what happens when you push emoji a step further?`;&#13;
+const REFERENCE_ENCODING = [644, 1162, 499, 4070, 1027, 21811, 369, 279, 3347, 17510, 1667, 11, 43465, 10648, 706, 1027, 2133, 11410, 241, 230, 9468, 241, 230, 9468, 241, 230, 13, 3296, 5209, 12, 679, 20, 11, 4376, 315, 682, 6170, 389, 14318, 5343, 459, 43465, 13, 17681, 6004, 264, 2539, 4668, 30425, 4632, 25891, 578, 83467, 14270, 13, 7570, 5195, 753, 12432, 37902, 277, 393, 718, 2192, 374, 17437, 922, 34771, 27635, 311, 279, 89847, 43465, 382, 2520, 1063, 11, 43465, 617, 9057, 33086, 369, 3932, 320, 5269, 279, 47781, 527, 499, 10171, 311, 1005, 279, 11410, 247, 225, 43465, 48366, 14968, 369, 1690, 3885, 11, 43465, 706, 9107, 709, 264, 27387, 502, 11298, 315, 10758, 13, 2684, 527, 1524, 43465, 1181, 1037, 80058, 1054, 35668, 863, 1405, 3932, 649, 8101, 264, 5818, 2316, 3196, 389, 264, 4101, 315, 43465, 13, 320, 1568, 1521, 25, 64139, 231, 93273, 236, 477, 62904, 99, 9468, 237, 119, 9468, 239, 241, 158, 248, 94, 570, 2030, 1148, 8741, 994, 499, 4585, 43465, 264, 3094, 4726, 30];&#13;
+&#13;
+const { Tokenizer} = require('./src/Tokenizer.js');&#13;
+const tokenizer = new Tokenizer('c14ba3f74738021051711288c26d430c');&#13;
+const output = tokenizer.encode(TEXT_TO_TEST);&#13;
+assertEqual({&#13;
+				name: "Encoding of " + TEXT_TO_TEST + " should match OpenAI Tokenizer:  https://platform.openai.com/tokenizer",&#13;
+				shouldbe: REFERENCE_ENCODING.toString(),&#13;
+				value: output.toString()&#13;
+		}); &#13;
+})(outputs, steps, params, stepResult, assertEqual);&#13;
+&#13;
+</value>
+        <variable display_value="Test script">989d9e235324220002c6435723dc3484</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>6901d965474d061051711288c26d436b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-19 19:15:21</sys_created_on>
+        <sys_id>a101d965474d061051711288c26d436c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-19 19:15:21</sys_updated_on>
+        <value>3.1</value>
+        <variable display_value="Jasmine version">42f2564b73031300440211d8faf6a777</variable>
+    </sys_variable_value>
+</record_update>

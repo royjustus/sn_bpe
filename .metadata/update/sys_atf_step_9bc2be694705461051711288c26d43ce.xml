@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from display_value="Run Server Side Script">b29c09ed470d061051711288c26d431f</copied_from>
+        <description>Run Server Side Validation Script</description>
+        <display_name>Run Server Side Script</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>1</order>
+        <step_config display_value="Run Server Side Script">41de4a935332120028bc29cac2dc349a</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-20 02:22:33</sys_created_on>
+        <sys_id>9bc2be694705461051711288c26d43ce</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Run Server Side Script</sys_name>
+        <sys_package display_value="sn_bpe" source="x_13131_bpe">46be477b4774021051711288c26d432c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="sn_bpe">46be477b4774021051711288c26d432c</sys_scope>
+        <sys_update_name>sys_atf_step_9bc2be694705461051711288c26d43ce</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-20 04:14:02</sys_updated_on>
+        <table/>
+        <test display_value="cl100k_base - Special Tokens">5fc2be694705461051711288c26d43c8</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=9bc2be694705461051711288c26d43ce"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>9bc2be694705461051711288c26d43ce</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-20 02:22:33</sys_created_on>
+        <sys_id>53c2be694705461051711288c26d43d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-20 02:22:33</sys_updated_on>
+        <value>3.1</value>
+        <variable display_value="Jasmine version">42f2564b73031300440211d8faf6a777</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>9bc2be694705461051711288c26d43ce</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-20 02:22:33</sys_created_on>
+        <sys_id>5bc2be694705461051711288c26d43d0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-20 04:14:02</sys_updated_on>
+        <value>(function(outputs, steps, params, stepResult, assertEqual) {&#13;
+&#13;
+const TEXT_TO_TEST = `  "&lt;|endoftext|&gt;": 100257,&#13;
+            "&lt;|fim_prefix|&gt;": 100258,&#13;
+            "&lt;|fim_middle|&gt;": 100259,&#13;
+            "&lt;|fim_suffix|&gt;": 100260,&#13;
+            "&lt;|endofprompt|&gt;": 100276&#13;
+       `;&#13;
+const REFERENCE_ENCODING = [220, 330, 100257, 794, 220, 1041, 15574, 345, 310, 330, 100258, 794, 220, 1041, 15966, 345, 310, 330, 100259, 794, 220, 1041, 15537, 345, 310, 330, 100260, 794, 220, 1041, 11387, 345, 310, 330, 100276, 794, 220, 1041, 16660, 198, 286];&#13;
+&#13;
+const { Tokenizer} = require('./src/Tokenizer.js');&#13;
+const tokenizer = new Tokenizer('c14ba3f74738021051711288c26d430c');&#13;
+const output = tokenizer.encode(TEXT_TO_TEST, "all");&#13;
+assertEqual({&#13;
+				name: "Encoding of " + TEXT_TO_TEST + " should match OpenAI Tokenizer:  https://platform.openai.com/tokenizer",&#13;
+				shouldbe: REFERENCE_ENCODING.toString(),&#13;
+				value: output.toString()&#13;
+		}); &#13;
+})(outputs, steps, params, stepResult, assertEqual);&#13;
+&#13;
+</value>
+        <variable display_value="Test script">989d9e235324220002c6435723dc3484</variable>
+    </sys_variable_value>
+</record_update>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="DELETE">
+        <active>true</active>
+        <copied_from display_value="">20019965474d061051711288c26d4352</copied_from>
+        <description>Run Server Side Validation Script</description>
+        <display_name>Run Server Side Script</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>2</order>
+        <step_config display_value="Run Server Side Script">41de4a935332120028bc29cac2dc349a</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-19 19:15:18</sys_created_on>
+        <sys_id>f8019965474d061051711288c26d43c9</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Run Server Side Script</sys_name>
+        <sys_package display_value="sn_bpe" source="x_13131_bpe">46be477b4774021051711288c26d432c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="sn_bpe">46be477b4774021051711288c26d432c</sys_scope>
+        <sys_update_name>sys_atf_step_f8019965474d061051711288c26d43c9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-19 19:17:45</sys_updated_on>
+        <table/>
+        <test display_value="cl100k_base Validation copy copy">f8011965474d061051711288c26d43af</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="DELETE" query="document_key=f8019965474d061051711288c26d43c9"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>f8019965474d061051711288c26d43c9</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-19 19:15:18</sys_created_on>
+        <sys_id>b4019965474d061051711288c26d43ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-19 19:15:18</sys_updated_on>
+        <value>(function(outputs, steps, params, stepResult, assertEqual) {&#13;
+&#13;
+const TEXT_TO_TEST = "We set sail on this new sea because there is new knowledge to be gained, and new rights to be won, and they must be won and used for the progress of all people.";&#13;
+const REFERENCE_ENCODING = [1687, 743, 30503, 389, 420, 502, 9581, 1606, 1070, 374, 502, 6677, 311, 387, 18661, 11, 323, 502, 3268, 311, 387, 2834, 11, 323, 814, 2011, 387, 2834, 323, 1511, 369, 279, 5208, 315, 682, 1274, 13]&#13;
+&#13;
+const { Tokenizer} = require('./src/Tokenizer.js');&#13;
+const tokenizer = new Tokenizer('c14ba3f74738021051711288c26d430c');&#13;
+const output = tokenizer.encode(TEXT_TO_TEST);&#13;
+assertEqual({&#13;
+				name: "Encoding of " + TEXT_TO_TEST + " should match OpenAI Tokenizer:  https://platform.openai.com/tokenizer",&#13;
+				shouldbe: REFERENCE_ENCODING.toString(),&#13;
+				value: output.toString()&#13;
+		}); &#13;
+})(outputs, steps, params, stepResult, assertEqual);&#13;
+&#13;
+</value>
+        <variable display_value="Test script">989d9e235324220002c6435723dc3484</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>f8019965474d061051711288c26d43c9</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-19 19:15:18</sys_created_on>
+        <sys_id>f0019965474d061051711288c26d43ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-19 19:15:18</sys_updated_on>
+        <value>3.1</value>
+        <variable display_value="Jasmine version">42f2564b73031300440211d8faf6a777</variable>
+    </sys_variable_value>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="sn_bpe">46be477b4774021051711288c26d432c</application>
+        <file_path/>
+        <instance_id>8f197952db9b559091232f17d4961956</instance_id>
+        <instance_name>dev145183</instance_name>
+        <name>sys_atf_step_f8019965474d061051711288c26d43c9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step"><sys_atf_step action="INSERT_OR_UPDATE"><active>true</active><copied_from display_value="">20019965474d061051711288c26d4352</copied_from><description>Run Server Side Validation Script</description><display_name>Run Server Side Script</display_name><inputs/><mugshots_cache_json/><notes/><order>2</order><step_config display_value="Run Server Side Script">41de4a935332120028bc29cac2dc349a</step_config><sys_class_name>sys_atf_step</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-03-19 19:15:18</sys_created_on><sys_id>f8019965474d061051711288c26d43c9</sys_id><sys_mod_count>4</sys_mod_count><sys_name>Run Server Side Script</sys_name><sys_package display_value="sn_bpe" source="x_13131_bpe">46be477b4774021051711288c26d432c</sys_package><sys_policy/><sys_scope display_value="sn_bpe">46be477b4774021051711288c26d432c</sys_scope><sys_update_name>sys_atf_step_f8019965474d061051711288c26d43c9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-03-19 19:17:45</sys_updated_on><table/><test display_value="cl100k_base Validation copy copy">f8011965474d061051711288c26d43af</test><timeout/><warning_message/></sys_atf_step><sys_variable_value action="delete_multiple" query="document_key=f8019965474d061051711288c26d43c9"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>f8019965474d061051711288c26d43c9</document_key><order>200</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-03-19 19:15:18</sys_created_on><sys_id>b4019965474d061051711288c26d43ca</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-03-19 19:15:18</sys_updated_on><value>(function(outputs, steps, params, stepResult, assertEqual) {&#13;
+&#13;
+const TEXT_TO_TEST = "We set sail on this new sea because there is new knowledge to be gained, and new rights to be won, and they must be won and used for the progress of all people.";&#13;
+const REFERENCE_ENCODING = [1687, 743, 30503, 389, 420, 502, 9581, 1606, 1070, 374, 502, 6677, 311, 387, 18661, 11, 323, 502, 3268, 311, 387, 2834, 11, 323, 814, 2011, 387, 2834, 323, 1511, 369, 279, 5208, 315, 682, 1274, 13]&#13;
+&#13;
+const { Tokenizer} = require('./src/Tokenizer.js');&#13;
+const tokenizer = new Tokenizer('c14ba3f74738021051711288c26d430c');&#13;
+const output = tokenizer.encode(TEXT_TO_TEST);&#13;
+assertEqual({&#13;
+				name: "Encoding of " + TEXT_TO_TEST + " should match OpenAI Tokenizer:  https://platform.openai.com/tokenizer",&#13;
+				shouldbe: REFERENCE_ENCODING.toString(),&#13;
+				value: output.toString()&#13;
+		}); &#13;
+})(outputs, steps, params, stepResult, assertEqual);&#13;
+&#13;
+</value><variable display_value="Test script">989d9e235324220002c6435723dc3484</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>f8019965474d061051711288c26d43c9</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-03-19 19:15:18</sys_created_on><sys_id>f0019965474d061051711288c26d43ca</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-03-19 19:15:18</sys_updated_on><value>3.1</value><variable display_value="Jasmine version">42f2564b73031300440211d8faf6a777</variable></sys_variable_value></record_update>]]></payload>
+        <payload_hash>-827995196</payload_hash>
+        <record_name>Run Server Side Script</record_name>
+        <reverted_from/>
+        <source>c6be477b4774021051711288c26d432f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-19 19:17:45</sys_created_on>
+        <sys_id>ec9119a5474d061051711288c26d43aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18e5825f1480000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-19 19:17:45</sys_updated_on>
+        <type>Test Step</type>
+        <update_guid>a49119a5854d0610ae50b764af8ff1aa</update_guid>
+        <update_guid_history>a49119a5854d0610ae50b764af8ff1aa:-827995196,a09119a5974d061093d8827d485bea84:-218841949,f8019965064d0610eb9b5b8acba626cb:771922998</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-19 19:17:45</sys_created_on>
+        <sys_db_object display_value="" name="sys_atf_step">sys_atf_step</sys_db_object>
+        <sys_id>74f57aba1fa94c4dbfac107a4b838149</sys_id>
+        <sys_metadata>f8019965474d061051711288c26d43c9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Run Server Side Script</sys_name>
+        <sys_package display_value="sn_bpe" source="x_13131_bpe">46be477b4774021051711288c26d432c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="sn_bpe">46be477b4774021051711288c26d432c</sys_scope>
+        <sys_scope_delete display_value="">62604b911d4a4e949a7048a041b15c10</sys_scope_delete>
+        <sys_update_name>sys_atf_step_f8019965474d061051711288c26d43c9</sys_update_name>
+        <sys_update_version display_value="sys_atf_step_f8019965474d061051711288c26d43c9">ec9119a5474d061051711288c26d43aa</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-19 19:17:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

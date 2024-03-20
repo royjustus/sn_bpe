@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_test_suite_test">
+    <sys_atf_test_suite_test action="INSERT_OR_UPDATE">
+        <abort_on_failure>false</abort_on_failure>
+        <order>2</order>
+        <sys_class_name>sys_atf_test_suite_test</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-19 19:21:50</sys_created_on>
+        <sys_id>ac82d9e5474d061051711288c26d43e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>c101d565474d061051711288c26d4396</sys_name>
+        <sys_package display_value="sn_bpe" source="x_13131_bpe">46be477b4774021051711288c26d432c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="sn_bpe">46be477b4774021051711288c26d432c</sys_scope>
+        <sys_update_name>sys_atf_test_suite_test_ac82d9e5474d061051711288c26d43e0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-19 19:21:50</sys_updated_on>
+        <test display_value="cl100k_base - Hamlet">c101d565474d061051711288c26d4396</test>
+        <test_suite display_value="Validate Tokenizer: cl100k_base ">a15259e5474d061051711288c26d43ce</test_suite>
+    </sys_atf_test_suite_test>
+</record_update>

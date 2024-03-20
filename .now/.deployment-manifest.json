@@ -1,0 +1,553 @@
+{
+  "files": [
+    {
+      "status": "DEPLOYED",
+      "current_hash": "560d7ddfd666216c27c854da53b2c3b7",
+      "path": "sys_app_46be477b4774021051711288c26d432c.xml",
+      "deploy_hash": "560d7ddfd666216c27c854da53b2c3b7",
+      "modulePath": ""
+    },
+    {
+      "status": "DEPLOYED",
+      "current_hash": "cc4e11dfd77400bd77359d4bbe613d98",
+      "path": "update\\sys_module_package_json.xml",
+      "deploy_hash": "cc4e11dfd77400bd77359d4bbe613d98",
+      "modulePath": "x_13131_bpe/sn_bpe/1.0.0/package.json"
+    },
+    {
+      "path": "package_inventory.csv",
+      "current_hash": "656d4c1a9035390323536bec25403ea5",
+      "deploy_hash": "656d4c1a9035390323536bec25403ea5",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "author_elective_update\\sys_script_7d32077f173f46648d19b6e3cbcb2f5e.xml",
+      "current_hash": "cb3baadd2a4c3b4dfe5766f0b781ee3b",
+      "deploy_hash": "cb3baadd2a4c3b4dfe5766f0b781ee3b",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_scope_privilege_3ff623bf47f4021051711288c26d4392.xml",
+      "current_hash": "58348073d0df17124320d193bc13f265",
+      "deploy_hash": "58348073d0df17124320d193bc13f265",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_scope_privilege_80072b734738021051711288c26d4386.xml",
+      "current_hash": "261ab8c6a8ed625a970c52c122c46f27",
+      "deploy_hash": "261ab8c6a8ed625a970c52c122c46f27",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_scope_privilege_bff62b734738021051711288c26d4382.xml",
+      "current_hash": "41ffc4305f2fee1f91595324652b4754",
+      "deploy_hash": "41ffc4305f2fee1f91595324652b4754",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "dictionary\\x_13131_bpe_tokenizer.xml",
+      "current_hash": "cb96ac56738bc9b8c0aec4d5f405ef6e",
+      "deploy_hash": "cb96ac56738bc9b8c0aec4d5f405ef6e",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_app_application_de89af374738021051711288c26d4339.xml",
+      "current_hash": "e756b3eff89b8513ad54e75dc0aafc14",
+      "deploy_hash": "e756b3eff89b8513ad54e75dc0aafc14",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_app_module_1a89af374738021051711288c26d434a.xml",
+      "current_hash": "940c5e244237813b5e0e84dd1f9329d2",
+      "deploy_hash": "940c5e244237813b5e0e84dd1f9329d2",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_db_object_141967374738021051711288c26d4309.xml",
+      "current_hash": "3cf2cd44390c28ace21fc04b41228334",
+      "deploy_hash": "3cf2cd44390c28ace21fc04b41228334",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_dictionary_x_13131_bpe_tokenizer_name.xml",
+      "current_hash": "605179abeeae249028eceec8960c9ffe",
+      "deploy_hash": "605179abeeae249028eceec8960c9ffe",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_dictionary_x_13131_bpe_tokenizer_null.xml",
+      "current_hash": "496eba00c2e02202f1472253ae6d6ba3",
+      "deploy_hash": "496eba00c2e02202f1472253ae6d6ba3",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_dictionary_x_13131_bpe_tokenizer_pattern_string.xml",
+      "current_hash": "cf65db72cc72081557b9c320ffc1489f",
+      "deploy_hash": "cf65db72cc72081557b9c320ffc1489f",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_dictionary_x_13131_bpe_tokenizer_special_tokens.xml",
+      "current_hash": "4cd5b15403dc240b2ae9df5125584ebf",
+      "deploy_hash": "4cd5b15403dc240b2ae9df5125584ebf",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_documentation_x_13131_bpe_tokenizer_name_en.xml",
+      "current_hash": "e7de1e27127d44116b1a764f875694f9",
+      "deploy_hash": "e7de1e27127d44116b1a764f875694f9",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_documentation_x_13131_bpe_tokenizer_pattern_string_en.xml",
+      "current_hash": "44227d6523a830fd9667e58021975841",
+      "deploy_hash": "44227d6523a830fd9667e58021975841",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_documentation_x_13131_bpe_tokenizer_special_tokens_en.xml",
+      "current_hash": "e7251a402a883c673a61f3462ba2d02a",
+      "deploy_hash": "e7251a402a883c673a61f3462ba2d02a",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_documentation_x_13131_bpe_tokenizer__en.xml",
+      "current_hash": "4c128453cf243b8b15adb96191f6f5e4",
+      "deploy_hash": "4c128453cf243b8b15adb96191f6f5e4",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_security_acl_1289af374738021051711288c26d436b.xml",
+      "current_hash": "8e5db92bad5c91e86c656e66141d64e8",
+      "deploy_hash": "8e5db92bad5c91e86c656e66141d64e8",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_security_acl_1689af374738021051711288c26d435e.xml",
+      "current_hash": "ae623b2ec25642d10fa2d74e63b85420",
+      "deploy_hash": "ae623b2ec25642d10fa2d74e63b85420",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_security_acl_9a89af374738021051711288c26d4364.xml",
+      "current_hash": "8c0c8eb635e83407df92e7eca660c9c3",
+      "deploy_hash": "8c0c8eb635e83407df92e7eca660c9c3",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_security_acl_d689af374738021051711288c26d4356.xml",
+      "current_hash": "917f06054875d2c49481031091b5dea4",
+      "deploy_hash": "917f06054875d2c49481031091b5dea4",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_security_acl_role_1e89af374738021051711288c26d4367.xml",
+      "current_hash": "11d0a48421be9689805fd7e66f248985",
+      "deploy_hash": "11d0a48421be9689805fd7e66f248985",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_security_acl_role_9289af374738021051711288c26d436e.xml",
+      "current_hash": "eba8cfd84c93d41cb1477e8d0027cbc3",
+      "deploy_hash": "eba8cfd84c93d41cb1477e8d0027cbc3",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_security_acl_role_9689af374738021051711288c26d4361.xml",
+      "current_hash": "c1512fb0b7256875a4372cb9fe788e79",
+      "deploy_hash": "c1512fb0b7256875a4372cb9fe788e79",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_security_acl_role_de89af374738021051711288c26d4359.xml",
+      "current_hash": "752680780b30e085c60e0f5c168eadd4",
+      "deploy_hash": "752680780b30e085c60e0f5c168eadd4",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_ui_application_9e89af374738021051711288c26d434e.xml",
+      "current_hash": "d3f1058e5dab113e9cd469a1acf74110",
+      "deploy_hash": "d3f1058e5dab113e9cd469a1acf74110",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_ui_module_9689af374738021051711288c26d4352.xml",
+      "current_hash": "f8e5e6843c497c4809bd48284c6b8b4b",
+      "deploy_hash": "f8e5e6843c497c4809bd48284c6b8b4b",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\ua_table_licensing_config_6a89af374738021051711288c26d4398.xml",
+      "current_hash": "496f01b80107e818fb8db692714bf1e3",
+      "deploy_hash": "496f01b80107e818fb8db692714bf1e3",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_ui_list_x_13131_bpe_tokenizer_null.xml",
+      "current_hash": "13c4dbf1722ae071e11e1b0288958866",
+      "deploy_hash": "13c4dbf1722ae071e11e1b0288958866",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_ui_section_1edae3b74738021051711288c26d435e.xml",
+      "current_hash": "a9055b95c65fc3e379e29797ef4e98b8",
+      "deploy_hash": "a9055b95c65fc3e379e29797ef4e98b8",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_scope_privilege_08bca77b4738021051711288c26d4348.xml",
+      "current_hash": "5c82202e1d01ced5ba7fa5e4c32327c6",
+      "deploy_hash": "5c82202e1d01ced5ba7fa5e4c32327c6",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_scope_privilege_80bc273b4738021051711288c26d4325.xml",
+      "current_hash": "b1c2317ca84434e5fb8af640ed55eb7e",
+      "deploy_hash": "b1c2317ca84434e5fb8af640ed55eb7e",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_scope_privilege_0990fff34778021051711288c26d43c6.xml",
+      "current_hash": "0bf80022e96eef92b47919bfa611165c",
+      "deploy_hash": "0bf80022e96eef92b47919bfa611165c",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "status": "DEPLOYED",
+      "current_hash": "105eb56f2809fc47d385d4000f064e0b",
+      "path": "update\\sys_module_src_utf8polyfill_js.xml",
+      "deploy_hash": "105eb56f2809fc47d385d4000f064e0b",
+      "modulePath": "x_13131_bpe/sn_bpe/1.0.0/src/UTF8Polyfill.js"
+    },
+    {
+      "path": "update\\sys_scope_privilege_48fdfeb847c9421051711288c26d43c6.xml",
+      "current_hash": "ca6dc63c4b3cb5265f3e5d76dba35b67",
+      "deploy_hash": "ca6dc63c4b3cb5265f3e5d76dba35b67",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "status": "DEPLOYED",
+      "current_hash": "8cf0c4d332a3639c6e983626be71a58a",
+      "path": "update\\sys_module_src_tokenizer_js.xml",
+      "deploy_hash": "8cf0c4d332a3639c6e983626be71a58a",
+      "modulePath": "x_13131_bpe/sn_bpe/1.0.0/src/Tokenizer.js"
+    },
+    {
+      "path": "update\\sys_scope_privilege_051dfce947c9061051711288c26d438b.xml",
+      "current_hash": "7fc1d402404b00a3016041862524010a",
+      "deploy_hash": "7fc1d402404b00a3016041862524010a",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_atf_test_ec7c05ed470d061051711288c26d43ae.xml",
+      "current_hash": "9af0d436ddb53356479df812215cfb11",
+      "deploy_hash": "9af0d436ddb53356479df812215cfb11",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "author_elective_update\\sys_atf_step_058019e1474d061051711288c26d43ee.xml",
+      "current_hash": "a8f508db095aac5dfcd99e1b936ec5b1",
+      "deploy_hash": "a8f508db095aac5dfcd99e1b936ec5b1",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "author_elective_update\\sys_atf_step_20019965474d061051711288c26d4352.xml",
+      "current_hash": "447c769d152ca6824e9ccd193b4bc3cc",
+      "deploy_hash": "447c769d152ca6824e9ccd193b4bc3cc",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "author_elective_update\\sys_atf_step_38019965474d061051711288c26d43b5.xml",
+      "current_hash": "7f5ef75399dcb49ac9c85232208b1d06",
+      "deploy_hash": "7f5ef75399dcb49ac9c85232208b1d06",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "author_elective_update\\sys_atf_step_4101d565474d061051711288c26d439e.xml",
+      "current_hash": "7f94c985b5a012e9a0c512f5defbc455",
+      "deploy_hash": "7f94c985b5a012e9a0c512f5defbc455",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "author_elective_update\\sys_atf_step_4a00d961474d061051711288c26d4315.xml",
+      "current_hash": "e2d10ec87e885f8b33ca8853cc6fae94",
+      "deploy_hash": "e2d10ec87e885f8b33ca8853cc6fae94",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "author_elective_update\\sys_atf_step_6901d965474d061051711288c26d4373.xml",
+      "current_hash": "c69175feaf007f054e9803c8c15fb11d",
+      "deploy_hash": "c69175feaf007f054e9803c8c15fb11d",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "author_elective_update\\sys_atf_step_a0019965474d061051711288c26d434e.xml",
+      "current_hash": "48594f4dad20cc62d37643646349865e",
+      "deploy_hash": "48594f4dad20cc62d37643646349865e",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "author_elective_update\\sys_atf_step_ad01d965474d061051711288c26d4383.xml",
+      "current_hash": "16656e6c2512a0b75460efd328e32c97",
+      "deploy_hash": "16656e6c2512a0b75460efd328e32c97",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "author_elective_update\\sys_atf_step_b4019965474d061051711288c26d43b1.xml",
+      "current_hash": "739aef8a16cda81e355a3b8f6dd366fc",
+      "deploy_hash": "739aef8a16cda81e355a3b8f6dd366fc",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "author_elective_update\\sys_atf_step_c501d965474d061051711288c26d4321.xml",
+      "current_hash": "655042e08ae0975b08777b3f228282b6",
+      "deploy_hash": "655042e08ae0975b08777b3f228282b6",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "author_elective_update\\sys_atf_step_cd01d565474d061051711288c26d4399.xml",
+      "current_hash": "f336c41d25b0eb16441f6b5b74f1c7cf",
+      "deploy_hash": "f336c41d25b0eb16441f6b5b74f1c7cf",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "author_elective_update\\sys_atf_step_d0015965474d061051711288c26d430f.xml",
+      "current_hash": "6147fd42e853b42a3f1e60eba29044b1",
+      "deploy_hash": "6147fd42e853b42a3f1e60eba29044b1",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "author_elective_update\\sys_atf_step_d4d05525474d061051711288c26d43a0.xml",
+      "current_hash": "5ca62f5d2bbf2d2ccc6a051fe4483ab7",
+      "deploy_hash": "5ca62f5d2bbf2d2ccc6a051fe4483ab7",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "author_elective_update\\sys_atf_step_e901d965474d061051711288c26d436f.xml",
+      "current_hash": "13eff7a4f84d483945e06134de3aa95d",
+      "deploy_hash": "13eff7a4f84d483945e06134de3aa95d",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "author_elective_update\\sys_atf_step_f8019965474d061051711288c26d43c9.xml",
+      "current_hash": "716c4006731472bacc797c16559c0d80",
+      "deploy_hash": "716c4006731472bacc797c16559c0d80",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_atf_step_54015965474d061051711288c26d4313.xml",
+      "current_hash": "7696a330382dc5d284e582efa8151657",
+      "deploy_hash": "7696a330382dc5d284e582efa8151657",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_atf_step_5501d965474d061051711288c26d4325.xml",
+      "current_hash": "2c0d00bf42d8ce4b4ae97ad95ac12c86",
+      "deploy_hash": "2c0d00bf42d8ce4b4ae97ad95ac12c86",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_atf_step_6901d965474d061051711288c26d436b.xml",
+      "current_hash": "77796e2c9629c8bd1cdee25880701e7e",
+      "deploy_hash": "77796e2c9629c8bd1cdee25880701e7e",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_atf_step_9bc2be694705461051711288c26d43ce.xml",
+      "current_hash": "c25d3f4460b058287552e8974cf135eb",
+      "deploy_hash": "c25d3f4460b058287552e8974cf135eb",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_atf_step_b29c09ed470d061051711288c26d431f.xml",
+      "current_hash": "dcec152aadf2da0aad1bd78c7badae75",
+      "deploy_hash": "dcec152aadf2da0aad1bd78c7badae75",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_atf_step_b4019965474d061051711288c26d43b9.xml",
+      "current_hash": "c5d39505b7e933d4dcd001e30b08abca",
+      "deploy_hash": "c5d39505b7e933d4dcd001e30b08abca",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_atf_test_58015965474d061051711288c26d430a.xml",
+      "current_hash": "5a518fba262cdfd7ec77d05de14fb723",
+      "deploy_hash": "5a518fba262cdfd7ec77d05de14fb723",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_atf_test_5fc2be694705461051711288c26d43c8.xml",
+      "current_hash": "498fef954dca3c719e1ebff200508725",
+      "deploy_hash": "498fef954dca3c719e1ebff200508725",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_atf_test_a90155e1474d061051711288c26d4312.xml",
+      "current_hash": "87b9e98bc6772c935be6e70315568392",
+      "deploy_hash": "87b9e98bc6772c935be6e70315568392",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_atf_test_c101d565474d061051711288c26d4396.xml",
+      "current_hash": "e294e22e1d5290cb3f5469d2a14527c9",
+      "deploy_hash": "e294e22e1d5290cb3f5469d2a14527c9",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_atf_test_f8011965474d061051711288c26d43af.xml",
+      "current_hash": "97b30e6c8c8086a1cd62fa6bb5e7fb93",
+      "deploy_hash": "97b30e6c8c8086a1cd62fa6bb5e7fb93",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_atf_test_suite_a15259e5474d061051711288c26d43ce.xml",
+      "current_hash": "a35b36b9a48b77172843d96568343ca7",
+      "deploy_hash": "a35b36b9a48b77172843d96568343ca7",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_atf_test_suite_test_1c92d9e5474d061051711288c26d435d.xml",
+      "current_hash": "d11edbbb08361433dd8539c1854c7ca5",
+      "deploy_hash": "d11edbbb08361433dd8539c1854c7ca5",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_atf_test_suite_test_9f9259e5474d061051711288c26d4351.xml",
+      "current_hash": "e7b1d85f2f7a1b0ede56d9a220b08939",
+      "deploy_hash": "e7b1d85f2f7a1b0ede56d9a220b08939",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_atf_test_suite_test_ac82d9e5474d061051711288c26d43e0.xml",
+      "current_hash": "cc7d5ab0c9cf6a979f63f15473cf378f",
+      "deploy_hash": "cc7d5ab0c9cf6a979f63f15473cf378f",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_atf_test_suite_test_d562d9e5474d061051711288c26d4348.xml",
+      "current_hash": "bbc459f6fb174505390bce85bb6adfba",
+      "deploy_hash": "bbc459f6fb174505390bce85bb6adfba",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "path": "update\\sys_atf_test_suite_test_e682d9e5474d061051711288c26d437d.xml",
+      "current_hash": "23a3b2f7a1e75744ee99895e8fdd9704",
+      "deploy_hash": "23a3b2f7a1e75744ee99895e8fdd9704",
+      "status": "DEPLOYED",
+      "modulePath": ""
+    },
+    {
+      "status": "DEPLOYED",
+      "current_hash": "f13a2bba3beaadb52d7934cda4d9abae",
+      "path": "author_elective_update\\sys_module_src_bpe_js.xml",
+      "deploy_hash": "f13a2bba3beaadb52d7934cda4d9abae",
+      "modulePath": "x_13131_bpe/sn_bpe/1.0.0/src/BPE.js"
+    },
+    {
+      "status": "DEPLOYED",
+      "current_hash": "8a98355a3c19db1a2a0412a83a411e97",
+      "path": "author_elective_update\\sys_module_src_debuglogger_js.xml",
+      "deploy_hash": "8a98355a3c19db1a2a0412a83a411e97",
+      "modulePath": "x_13131_bpe/sn_bpe/1.0.0/src/debugLogger.js"
+    },
+    {
+      "status": "DEPLOYED",
+      "current_hash": "7a8743b2b91721f9a118d85bad7c6e06",
+      "path": "author_elective_update\\sys_module_src_encoderdecoderpolyfill_js.xml",
+      "deploy_hash": "7a8743b2b91721f9a118d85bad7c6e06",
+      "modulePath": "x_13131_bpe/sn_bpe/1.0.0/src/EncoderDecoderPolyfill.js"
+    },
+    {
+      "status": "DEPLOYED",
+      "current_hash": "cb0cb1a17b3e3cabdf32f9d7b8e48d50",
+      "path": "author_elective_update\\sys_module_src_test_mjs.xml",
+      "deploy_hash": "cb0cb1a17b3e3cabdf32f9d7b8e48d50",
+      "modulePath": "x_13131_bpe/sn_bpe/1.0.0/src/test.mjs"
+    },
+    {
+      "status": "DEPLOYED",
+      "current_hash": "755d42217acbe200f178ebc15fa55ed6",
+      "path": "author_elective_update\\sys_module_src_tokenizerloader_js.xml",
+      "deploy_hash": "755d42217acbe200f178ebc15fa55ed6",
+      "modulePath": "x_13131_bpe/sn_bpe/1.0.0/src/TokenizerLoader.js"
+    },
+    {
+      "status": "DEPLOYED",
+      "current_hash": "85c95aae1d243f4de76f943796c70f98",
+      "path": "author_elective_update\\sys_module_src_tokenizers_js.xml",
+      "deploy_hash": "85c95aae1d243f4de76f943796c70f98",
+      "modulePath": "x_13131_bpe/sn_bpe/1.0.0/src/Tokenizers.js"
+    }
+  ],
+  "packageJsonHash": "709c18b606d98949a7a9934eb7d5a8b9",
+  "register_scope": false,
+  "last_fetch": "2024-03-20T06:11:24.492Z"
+}
