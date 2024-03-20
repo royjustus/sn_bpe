@@ -3,7 +3,6 @@
 // Basded on https://github.com/coolaj86/TextEncoderLite_tmp under Apache 2.0
 // https://github.com/coolaj86/TextEncoderLite_tmp?tab=Apache-2.0-1-ov-file#readme
 
-// Also Adapted from Andrej Karpathy's "Let's build the GPT Tokenizer" https://www.youtube.com/watch?v=zduSFxRajkE
 
 export class TextEncoderPolyfill {
     encode(str: string): number[] {

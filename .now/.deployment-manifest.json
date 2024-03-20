@@ -9,9 +9,9 @@
     },
     {
       "status": "DEPLOYED",
-      "current_hash": "cc4e11dfd77400bd77359d4bbe613d98",
+      "current_hash": "22406796e5a4b7231cd89810812ed314",
       "path": "update\\sys_module_package_json.xml",
-      "deploy_hash": "cc4e11dfd77400bd77359d4bbe613d98",
+      "deploy_hash": "22406796e5a4b7231cd89810812ed314",
       "modulePath": "x_13131_bpe/sn_bpe/1.0.0/package.json"
     },
     {
@@ -503,51 +503,9 @@
       "deploy_hash": "23a3b2f7a1e75744ee99895e8fdd9704",
       "status": "DEPLOYED",
       "modulePath": ""
-    },
-    {
-      "status": "DEPLOYED",
-      "current_hash": "f13a2bba3beaadb52d7934cda4d9abae",
-      "path": "author_elective_update\\sys_module_src_bpe_js.xml",
-      "deploy_hash": "f13a2bba3beaadb52d7934cda4d9abae",
-      "modulePath": "x_13131_bpe/sn_bpe/1.0.0/src/BPE.js"
-    },
-    {
-      "status": "DEPLOYED",
-      "current_hash": "8a98355a3c19db1a2a0412a83a411e97",
-      "path": "author_elective_update\\sys_module_src_debuglogger_js.xml",
-      "deploy_hash": "8a98355a3c19db1a2a0412a83a411e97",
-      "modulePath": "x_13131_bpe/sn_bpe/1.0.0/src/debugLogger.js"
-    },
-    {
-      "status": "DEPLOYED",
-      "current_hash": "7a8743b2b91721f9a118d85bad7c6e06",
-      "path": "author_elective_update\\sys_module_src_encoderdecoderpolyfill_js.xml",
-      "deploy_hash": "7a8743b2b91721f9a118d85bad7c6e06",
-      "modulePath": "x_13131_bpe/sn_bpe/1.0.0/src/EncoderDecoderPolyfill.js"
-    },
-    {
-      "status": "DEPLOYED",
-      "current_hash": "cb0cb1a17b3e3cabdf32f9d7b8e48d50",
-      "path": "author_elective_update\\sys_module_src_test_mjs.xml",
-      "deploy_hash": "cb0cb1a17b3e3cabdf32f9d7b8e48d50",
-      "modulePath": "x_13131_bpe/sn_bpe/1.0.0/src/test.mjs"
-    },
-    {
-      "status": "DEPLOYED",
-      "current_hash": "755d42217acbe200f178ebc15fa55ed6",
-      "path": "author_elective_update\\sys_module_src_tokenizerloader_js.xml",
-      "deploy_hash": "755d42217acbe200f178ebc15fa55ed6",
-      "modulePath": "x_13131_bpe/sn_bpe/1.0.0/src/TokenizerLoader.js"
-    },
-    {
-      "status": "DEPLOYED",
-      "current_hash": "85c95aae1d243f4de76f943796c70f98",
-      "path": "author_elective_update\\sys_module_src_tokenizers_js.xml",
-      "deploy_hash": "85c95aae1d243f4de76f943796c70f98",
-      "modulePath": "x_13131_bpe/sn_bpe/1.0.0/src/Tokenizers.js"
     }
   ],
   "packageJsonHash": "709c18b606d98949a7a9934eb7d5a8b9",
   "register_scope": false,
-  "last_fetch": "2024-03-20T06:11:24.492Z"
+  "last_fetch": "2024-03-20T06:15:55.032Z"
 }
