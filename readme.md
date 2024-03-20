@@ -15,7 +15,7 @@ This project introduces a Byte Pair Encoding (BPE) tokenizer for use in ServiceN
 
 1. Ensure you have access to ServiceNow Studio and the necessary permissions to create and manage applications.
 2. Use the guide to the ServiceNow SDK to set up your instance connection to facilitate deployment [ServiceNow SDK links](https://docs.servicenow.com/bundle/washingtondc-api-reference/page/script/sdk/concept/servicenow-sdk.html)
-3. Run npm run upload
+3. Run `npm run upload` to deploy the project to your default instance connection. 
 
 ## Usage
 
@@ -35,6 +35,8 @@ const { Tokenizer} = require('./src/Tokenizer.js');
 const tokenizer = new Tokenizer('c14ba3f74738021051711288c26d430c'); //
 const output = tokenizer.encode(TEXT_TO_TEST, "all");
 ```
+
+When the tokenizer is first run some pre-processing happens based on the tiktoken file. To reduce latency this processing is cached and re-used as a file on the tokenizer gliderecord. 
 
 ### Acknowledgments 
 This tokenizer is largely based on Andrej Karpathy's [MiniBPE](https://github.com/karpathy/minbpe) and associated youtube video: [Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE)
