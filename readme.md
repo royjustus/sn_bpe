@@ -38,6 +38,11 @@ const output = tokenizer.encode(TEXT_TO_TEST, "all");
 
 When the tokenizer is first run some pre-processing happens based on the tiktoken file. To reduce latency this processing is cached and re-used as a file on the tokenizer gliderecord. 
 
+### TODO: 
+
+- Implement the Decode Logic
+- Tests for Decode logic 
+
 ### Acknowledgments 
 This tokenizer is largely based on Andrej Karpathy's [MiniBPE](https://github.com/karpathy/minbpe) and associated youtube video: [Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE)
 
