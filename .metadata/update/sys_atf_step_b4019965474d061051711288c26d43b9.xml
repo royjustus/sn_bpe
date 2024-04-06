@@ -13,14 +13,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-03-19 19:15:18</sys_created_on>
         <sys_id>b4019965474d061051711288c26d43b9</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Run Server Side Script</sys_name>
         <sys_package display_value="sn_bpe" source="x_13131_bpe">46be477b4774021051711288c26d432c</sys_package>
         <sys_policy/>
         <sys_scope display_value="sn_bpe">46be477b4774021051711288c26d432c</sys_scope>
         <sys_update_name>sys_atf_step_b4019965474d061051711288c26d43b9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-03-19 19:17:45</sys_updated_on>
+        <sys_updated_on>2024-04-06 21:06:50</sys_updated_on>
         <table/>
         <test display_value="cl100k_base - Schrödinger">f8011965474d061051711288c26d43af</test>
         <timeout/>
@@ -35,9 +35,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-03-19 19:15:18</sys_created_on>
         <sys_id>70019965474d061051711288c26d43ba</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-03-19 19:15:18</sys_updated_on>
+        <sys_updated_on>2024-04-06 21:06:51</sys_updated_on>
         <value>(function(outputs, steps, params, stepResult, assertEqual) {&#13;
 &#13;
 const TEXT_TO_TEST = "∇2ψ+8π2 m(E – U)ψ/h 2=0";&#13;
@@ -51,6 +51,14 @@ assertEqual({&#13;
 				shouldbe: REFERENCE_ENCODING.toString(),&#13;
 				value: output.toString()&#13;
 		}); &#13;
+		&#13;
+const reconstructed = tokenizer.decode(output);&#13;
+assertEqual({&#13;
+				name: "Decoding of " + reconstructed + " should match original text " + TEXT_TO_TEST,&#13;
+				shouldbe: TEXT_TO_TEST.toString(),&#13;
+				value: reconstructed&#13;
+		}); &#13;
+&#13;
 })(outputs, steps, params, stepResult, assertEqual);&#13;
 &#13;
 </value>
