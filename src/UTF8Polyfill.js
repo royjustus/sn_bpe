@@ -4,7 +4,6 @@
 // https://github.com/coolaj86/TextEncoderLite_tmp?tab=Apache-2.0-1-ov-file#readme
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TextDecoderPolyfill = exports.TextEncoderPolyfill = void 0;
-// Also Adapted from Andrej Karpathy's "Let's build the GPT Tokenizer" https://www.youtube.com/watch?v=zduSFxRajkE
 var TextEncoderPolyfill = /** @class */ (function () {
     function TextEncoderPolyfill() {
     }

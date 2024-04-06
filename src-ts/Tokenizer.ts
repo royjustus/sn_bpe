@@ -6,8 +6,9 @@ GlideRecord,
 GlideTextReader
 } from '@servicenow/glide';
 
-import { TextEncoderPolyfill } from './UTF8Polyfill.js';
+import { TextEncoderPolyfill, TextDecoderPolyfill } from './UTF8Polyfill.js';
 export const TextEncoder = TextEncoderPolyfill;
+export const TextDecoder = TextDecoderPolyfill;
 
 export type MergeDict = { [key: string]: number };
 export type TokenVocabulary = { [key: string]: number };
@@ -477,6 +478,28 @@ private saveTokenizerCachedConfig(tokenizer: string | GlideRecord, tokenizerConf
     this.info('Saving Cached tokenizer sys_id is: ' + attachment);
 }
 
+/**NEEDS TO IMPLEMENT: 
+def decode(self, ids):
+# we have to un-permute the bytes before we decode
+text_bytes = b"".join(self.vocab[idx] for idx in ids)
+text_bytes = bytes(self.inverse_byte_shuffle[b] for b in text_bytes)
+text = text_bytes.decode("utf-8", errors="replace")
+return text
+ */
+public decode(ids: number[]): string {
+    let text_bytes: number[] = [];
+    for (let idx of ids) {
+        const text_chunk = this.vocabulary[idx];
+        for (let i = 0; i < text_chunk.length; i++) 
+        {
+            text_bytes.push(text_chunk.charCodeAt(i));
+        }
+    }
+    text_bytes = text_bytes.map(b => this.inverseByteShuffle[b]);
+    const decoded = new TextDecoder().decode(text_bytes);
+    return decoded;
+}
+
 /**
  * Encodes the given text into an array of numerical IDs, with options to include, exclude,
  * or specifically handle special tokens based on the `allowedSpecial` parameter. This method
@@ -669,8 +692,7 @@ private getStats(ids: number[]): { [key: string]: {value: number, order: number}
 /**
  * Merges specific pairs of consecutive numerical IDs in the input array into a single ID, based on
  * the given pair and its corresponding merge index (`idx`). This method supports the transformation of
- * encoding sequences by consolidating specified pairs of IDs, which is a critical step in encoding
- * algorithms that compress or simplify token sequences.
+ * encoding sequences by consolidating specified pairs of IDs.
  *
  * The method can accept the `pair` parameter in two forms: as a string representation of two numbers
  * separated by a comma, or as an array of two numbers. It then iterates through the `ids` array,

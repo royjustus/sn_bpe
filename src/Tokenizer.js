@@ -1,9 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Tokenizer = exports.TextEncoder = void 0;
+exports.Tokenizer = exports.TextDecoder = exports.TextEncoder = void 0;
 var glide_1 = require("@servicenow/glide");
 var UTF8Polyfill_js_1 = require("./UTF8Polyfill.js");
 exports.TextEncoder = UTF8Polyfill_js_1.TextEncoderPolyfill;
+exports.TextDecoder = UTF8Polyfill_js_1.TextDecoderPolyfill;
 /**
  * Represents a tokenizer used for tokenization and text processing.
  */
@@ -432,6 +433,28 @@ var Tokenizer = /** @class */ (function () {
         var attachment = GSA.write(tokenizerRecord, tokenizerId + '.cache.text', 'text/plain', JSON.stringify(tokenizerConfig));
         this.info('Saving Cached tokenizer sys_id is: ' + attachment);
     };
+    /**NEEDS TO IMPLEMENT:
+    def decode(self, ids):
+    # we have to un-permute the bytes before we decode
+    text_bytes = b"".join(self.vocab[idx] for idx in ids)
+    text_bytes = bytes(self.inverse_byte_shuffle[b] for b in text_bytes)
+    text = text_bytes.decode("utf-8", errors="replace")
+    return text
+     */
+    Tokenizer.prototype.decode = function (ids) {
+        var _this = this;
+        var text_bytes = [];
+        for (var _i = 0, ids_1 = ids; _i < ids_1.length; _i++) {
+            var idx = ids_1[_i];
+            var text_chunk = this.vocabulary[idx];
+            for (var i = 0; i < text_chunk.length; i++) {
+                text_bytes.push(text_chunk.charCodeAt(i));
+            }
+        }
+        text_bytes = text_bytes.map(function (b) { return _this.inverseByteShuffle[b]; });
+        var decoded = new exports.TextDecoder().decode(text_bytes);
+        return decoded;
+    };
     /**
      * Encodes the given text into an array of numerical IDs, with options to include, exclude,
      * or specifically handle special tokens based on the `allowedSpecial` parameter. This method
@@ -624,8 +647,7 @@ var Tokenizer = /** @class */ (function () {
     /**
      * Merges specific pairs of consecutive numerical IDs in the input array into a single ID, based on
      * the given pair and its corresponding merge index (`idx`). This method supports the transformation of
-     * encoding sequences by consolidating specified pairs of IDs, which is a critical step in encoding
-     * algorithms that compress or simplify token sequences.
+     * encoding sequences by consolidating specified pairs of IDs.
      *
      * The method can accept the `pair` parameter in two forms: as a string representation of two numbers
      * separated by a comma, or as an array of two numbers. It then iterates through the `ids` array,
