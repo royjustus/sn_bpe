@@ -33,15 +33,16 @@ Note that ServiceNow's JS engine does not support (?i:... case insensitive regex
 ```js
 const { Tokenizer} = require('./src/Tokenizer.js');
 const tokenizer = new Tokenizer('c14ba3f74738021051711288c26d430c'); //
-const output = tokenizer.encode(TEXT_TO_TEST, "all");
+const output = tokenizer.encode("TEXT_TO_TEST", "all");
+gs.info(output);
+gs.info(tokenizer.decode(output));
 ```
 
 When the tokenizer is first run some pre-processing happens based on the tiktoken file. To reduce latency this processing is cached and re-used as a file on the tokenizer gliderecord. 
 
 ### TODO: 
 
-- Implement the Decode Logic
-- Tests for Decode logic 
+- Expand Tests for Decode logic 
 
 ### Acknowledgments 
 This tokenizer is largely based on Andrej Karpathy's [MiniBPE](https://github.com/karpathy/minbpe) and associated youtube video: [Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE)
