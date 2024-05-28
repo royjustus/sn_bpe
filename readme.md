@@ -28,6 +28,8 @@ To initialize a tokenizer:
 Create a record in x_13131_bpe_tokenizer with a .tiktoken.txt file attachment. See ./examples for sample data. 
 Some examples to get started with can be found [here](https://github.com/dqbd/tiktoken/blob/110eef4f6830f4f31e0f9810c8f9b3ef3175a5b4/tiktoken/registry.json#L8):
 
+The examples folder includes an XML 
+
 Note that ServiceNow's JS engine does not support (?i:... case insensitive regex or \p{L} unicode character classes. As a result the Regex in that registry must be substantially modified in order to run in ServiceNow which is the reason for the very long regex in the demo data. 
 
 ```js
@@ -35,6 +37,7 @@ const { Tokenizer} = require('./src/Tokenizer.js');
 const tokenizer = new Tokenizer('c14ba3f74738021051711288c26d430c'); //
 const output = tokenizer.encode("TEXT_TO_TEST", "all");
 gs.info(output);
+gs.info(output.length);
 gs.info(tokenizer.decode(output));
 ```
 
