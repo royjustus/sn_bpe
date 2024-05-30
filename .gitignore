@@ -4,6 +4,8 @@ node_modules/
 # Ignore logs and generated files
 logs/
 dist/
+src/**/*.js
+src/**/*.js.map
 
 # Ignore environment-specific files
 .env
