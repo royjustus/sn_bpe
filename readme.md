@@ -4,6 +4,9 @@
 
 This project introduces a Byte Pair Encoding (BPE) tokenizer for use in ServiceNow. BPE is a subword tokenization method that allows for efficient encoding and processing of text data by decomposing words into frequently occurring subwords or characters. This approach is beneficial for NLP tasks where the vocabulary might be vast or cannot be predefined. The CL100k Base Tokenizer implemented is the current (March 2024) GPT-4 tokenizer. 
 
+## Should I run this in Production? 
+I don't think so, this is intended more for educational purposes and to build familiarity with key elements of LLMs than because I could think of a specific production use case. Usually it's ok to let your inference API handle tokenization. 
+
 ## Features
 
 - Tokenization using Byte Pair Encoding (BPE) method.
