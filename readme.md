@@ -15,7 +15,8 @@ This project introduces a Byte Pair Encoding (BPE) tokenizer for use in ServiceN
 
 1. Ensure you have access to ServiceNow Studio and the necessary permissions to create and manage applications.
 2. Use the guide to the ServiceNow SDK to set up your instance connection to facilitate deployment [ServiceNow SDK links](https://docs.servicenow.com/bundle/washingtondc-api-reference/page/script/sdk/concept/servicenow-sdk.html)
-3. Run `npm run upload` to deploy the project to your default instance connection. 
+3. Run `npm i` to install packages
+4. Run `npm run upload` to deploy the project to your default instance connection. 
 
 ## Usage
 
